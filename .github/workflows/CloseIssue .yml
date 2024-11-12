@@ -10,3 +10,5 @@ jobs:
         run: gh issue close --comment "Auto-closing issue" "1"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
