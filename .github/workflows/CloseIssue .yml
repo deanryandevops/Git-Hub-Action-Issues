@@ -1,7 +1,7 @@
 name: Close Issue
 on:
-  issues:
-    types: [opened]
+  pull_request:
+    types: [closed]
 jobs:
   CloseIssue:
     runs-on: ubuntu-latest
